@@ -1,21 +1,14 @@
 // import logo from './logo.svg';
 // import './App.css';
 import IncrementerContainer from './containers/IncrementerContainer';
-import AppProvider from './store/store';
+import Incrementer from './Incrementer';
 
-function AppWrapper() {
-  return (
-    <div className="App">
-      <IncrementerContainer />
-    </div>
-  );
-}
 
 function App() {
   return (
-    <AppProvider>
-      <AppWrapper />
-    </AppProvider>
+    <div className="App">
+      <Incrementer />
+    </div>
   );
 }
 
